@@ -36,9 +36,9 @@ export default {
             var uPattern = /^[a-zA-Z0-9_-]{4,16}$/; // 用户名正则，4到16位（字母，数字，下划线，减号）
             var aPattern = /^[a-zA-Z0-9]{4,16}$/; // 密码正则，4到16位（字母，数字）
             if (!uPattern.test(this.props.username)) {
-                this.$message.error('用户名输入错误');
+                this.$message.error('Username should only contains 4 - 16 characters, numbers, under line or dash line');
             } else if (!aPattern.test(this.props.password)) {
-                this.$message.error('密码输入错误');
+                this.$message.error('Password should only contains 4 - 16 characters or numbers');
             } else {
                 API.login({
                     username: this.props.username,
@@ -46,14 +46,14 @@ export default {
                 }).then(res => {
                     if (res.code == '0') {
                         this.$message({
-                            message: '登录成功',
+                            message: 'Login Success',
                             type: 'success'
                         });
                         this.$router.push({
                             name: 'index'
                         })
                     } else {
-                        this.$message.error('登录失败，请重试');
+                        this.$message.error('Login Failed');
                     }
                 })
                 // API.userList().then(res=>{
