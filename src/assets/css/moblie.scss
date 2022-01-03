@@ -1,0 +1,179 @@
+.mobile_phone {
+  padding-bottom: 10px;
+
+  .main-table {
+    .nav-table {
+      display: flex;
+      align-items: center;
+      margin: 10px 8px;
+
+      .nav-name {
+        display: block;
+        width: 60px;
+        font-size: 15px;
+        margin-right: 5px;
+        height: 30px;
+        line-height: 38px;
+      }
+    }
+
+    .table-card {
+      margin: 20px 10px;
+
+      .card-item {
+        margin-top: 20px;
+
+        .item {
+          display: flex;
+          margin-bottom: 5px;
+
+          .item-name {
+            width: 100px;
+            display: inline-block;
+            text-align: right;
+            margin-right: 10px;
+            font-size: 15px;
+          }
+
+          .item-content {
+            display: block;
+            font-size: 15px;
+          }
+        }
+      }
+
+      .el-button--warning {
+        font-size: 12px !important;
+        width: 50px;
+        padding: 5px;
+      }
+    }
+  }
+
+  .nav-btn {
+    .el-button {
+      font-size: 12px !important;
+      padding: 5px !important;
+    }
+  }
+
+  .img-flot {
+    position: relative;
+
+    .flot {
+      position: absolute;
+      right: 0;
+    }
+
+    .img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .dialog-main {
+    width: 260px;
+    margin: auto;
+
+    .dialog-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .el-input {
+        width: 160px !important;
+      }
+
+      .el-upload--picture-card {
+        width: 50px;
+        height: 50px;
+        line-height: 60px;
+      }
+
+      .el-upload-list--picture-card .el-upload-list__item {
+        width: 50px;
+        height: 50px;
+      }
+
+      .hide .el-upload--picture-card {
+        display: none;
+      }
+
+      .dialog-span {
+        font-size: 12px;
+        display: inline-block;
+        width: 80px;
+        text-align: right;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.mobile_phone_detail {
+  .datail-mian {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .phone-car {
+      margin-bottom: 20px;
+
+      .main-img {
+        width: 100px;
+        height: 100px;
+      }
+
+      .pie {
+        width: 100px;
+        height: 100px;
+      }
+
+      .main-mid {
+        .item {
+          display: flex;
+          margin-bottom: 5px;
+
+          .item-name {
+            width: 100px;
+            display: inline-block;
+            text-align: right;
+            margin-right: 10px;
+            font-size: 15px;
+          }
+
+          .item-content {
+            width: 150px;
+            display: block;
+            font-size: 15px;
+            word-wrap: break-word;
+          }
+        }
+      }
+    }
+
+    .main-chars {
+      .echars-line {
+        width: 350px;
+        height: 350px;
+        margin: 40px 0;
+      }
+
+      .echars-pie {
+        width: 350px;
+
+        .pie-item {
+          width: 350px;
+          height: 350px;
+        }
+      }
+
+      .echars-bar {
+        width: 350px;
+        height: 350px;
+      }
+    }
+  }
+}
