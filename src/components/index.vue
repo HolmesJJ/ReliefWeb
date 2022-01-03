@@ -5,7 +5,7 @@
             <span class="nav-name">Emma</span>
             <div class="nav-btn">
                 <el-button @click="toLogin">Logout</el-button>
-                <el-button @click="addRow">Add User</el-button>
+                <el-button @click="addRow">Add Student</el-button>
             </div>
         </div>
         <el-table :data="tableData" style="width: 100%" v-if="this.windowWidth > 500" empty-text="Data is loading">
@@ -147,8 +147,8 @@
                 </div>
             </div>
             <span slot="footer" class="dialog-footer">
-                <el-button @click="handleClose">取 消</el-button>
-                <el-button type="primary" @click="submitAdd">确 定</el-button>
+                <el-button @click="handleClose">Cancel</el-button>
+                <el-button type="primary" @click="submitAdd">Confirm</el-button>
             </span>
         </el-dialog>
     </div>
@@ -334,14 +334,14 @@ export default {
             } else {
                 API.addUser(this.params).then(res => {
                     if (res.code == 0) {
-                        this.$message.success('Add User success')
+                        this.$message.success('Add student success')
                         this.dialogVisible = false
                         Object.assign(this.$data.params, this.$options.data().params)
                         this.getList()
                     } else if (res.code == 1) {
-                        this.$message.error('User already exists ')
+                        this.$message.error('Student already exists ')
                     } else {
-                        this.$message.error('Add failed')
+                        this.$message.error('Add student failed')
                     }
                 })
             }
