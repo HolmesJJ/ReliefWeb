@@ -2,7 +2,7 @@
 <div :class="personInfoClass">
     <div class="main-table">
         <div class="nav-table">
-            <span class="nav-name">Emma</span>
+            <span class="nav-name">Welcome!</span>
             <div class="nav-btn">
                 <el-button @click="toLogin">Logout</el-button>
                 <el-button @click="addRow">Add Student</el-button>
